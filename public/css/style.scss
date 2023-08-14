@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+
+$text-color  : #d9a9ad;
+
+html {
+    font-size: 10px;
+}
+
+input,button {
+    outline: none;
+    border: none;
+
+    &::-webkit-input-placeholder {
+        color: $text-color;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+button {
+    color: $text-color;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: 1px solid $text-color;
+    margin: 0 1rem;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, #211f45 , #b95a57);
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 15px 0px #3e3636;
+    transform: translateY(90%);
+
+
+
+    &__intro {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right top , #211334, #6b3145);
+        padding: 4rem 1rem;
+    }
+
+    &__sign-up {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 4rem;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right bottom, #883d50, #d15958);
+    }
+
+    &__image {
+        width: 50%;
+        border-radius: 99px;
+        margin-bottom: 3rem;
+    }
+
+    &__heading {
+        color: #c25354;
+        padding-bottom: 2rem;
+        font-size: 1.7rem;
+        font-weight: 100;
+        letter-spacing: 2rem;
+    }
+
+    &__input {
+        color: $text-color;
+        background-color: transparent;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid $text-color;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    &-button {
+        // margin-top: 2rem;
+        margin: 2rem 0 2rem;
+    }
+
+    &__forgot {
+        font-weight: 300;
+        text-decoration: none;
+        cursor: pointer;
+        color: $text-color;
+        font-size: 1.4rem;
+        word-spacing: 5px;
+    }
+
+}
